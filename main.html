@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <h1>Calculator :</h1>
+    <div class="calculator">
+        <div id="ecran" class="ecran">
+            <div id="result" class="result"><p></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="numbers">
+                <p id="9" onclick="takeNumber(id)"  onclick="takeNumber2(id)">9</p>
+                <p id="8" onclick="takeNumber(id)"  onclick="takeNumber2(id)">8</p>
+                <p id="7" onclick="takeNumber(id)"  onclick="takeNumber2(id)">7</p>
+                <p id="6" onclick="takeNumber(id)"  onclick="takeNumber2(id)">6</p>
+                <p id="5" onclick="takeNumber(id)"  onclick="takeNumber2(id)">5</p>
+                <p id="4" onclick="takeNumber(id)"  onclick="takeNumber2(id)">4</p>
+                <p id="3" onclick="takeNumber(id)"  onclick="takeNumber2(id)">3</p>
+                <p id="2" onclick="takeNumber(id)"  onclick="takeNumber2(id)">2</p>
+                <p id="1" onclick="takeNumber(id)"  onclick="takeNumber2(id)">1</p>
+                <p id="C" onclick="deleteAll(id)">C</p>
+                <p id="0" onclick="takeNumber(id)"  onclick="takeNumber2(id)">0</p>
+                <p id="." onclick="takeNumber(id)"  onclick="takeNumber2(id)">.</p>
+            </div>
+            <div class="operations">
+                <p id="/" onclick="takeOperation(id)">/</p>
+                <p id="*" onclick="takeOperation(id)">*</p>
+                <p id="-" onclick="takeOperation(id)">-</p>
+                <p id="+" onclick="takeOperation(id)">+</p>
+                <p id="=" class="equal" onclick="equalFunc()">=</p>
+            </div>
+        </div>
+    </div>
+    <p id="ha"></p>
+    <script src="script.js"></script>
+</body>
+</html>
