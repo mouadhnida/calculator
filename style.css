@@ -1,0 +1,91 @@
+body {
+    background-color: teal;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    width: 100%;
+    display: grid;
+    grid-row: 1fr 4fr;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.ecran {
+    background-color: #112B3C;
+    color: white;
+    width: 14em;
+    height: 3.5em;
+    text-align: end;
+    border-radius: 5px;
+    box-shadow: #112B3C 2px 2px 5px;
+}
+
+.result {
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+
+.buttons {
+    width: 14em;
+    height: 15em;
+    display: grid;
+    grid: 1fr / 3.5fr 1fr;
+    grid-auto-flow: row;
+    column-gap: 10px;
+    cursor: pointer
+}
+.numbers {
+    display: grid;
+    grid: repeat(4, 1fr) / repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+
+}
+
+.numbers p {
+    width: 100%;
+    background-color: #EFEAD8;
+    margin: 0;
+    padding-top: 1em;
+    border-radius: 5px;
+    box-shadow:  0 2px 5px;
+}
+
+.operations {
+    display: grid;
+    grid: repeat(4, 1fr) 2fr / 1fr;
+    row-gap: 10px;
+    text-align: center;
+}
+
+.operations p {
+    width: 100%;
+    background-color: #EFEAD8;
+    margin: 0;
+    border-radius: 5px;
+    padding-top: 0.5em;
+    box-shadow:  0 2px 5px;
+}
+
+.equal {
+    background-color: orange !important;
+    padding-top: 1.5em !important;
+
+}
+
+
+
